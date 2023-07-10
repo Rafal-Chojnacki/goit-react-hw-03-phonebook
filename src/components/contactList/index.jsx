@@ -22,9 +22,13 @@ class ContactList extends Component {
       if (filter.length === 0) {
         return contacts
       }
-  
       return contacts.filter((contact) => contact.name.toLowerCase().indexOf(filter) >= 0)
     }
+
+    clearFindInput = () => {
+      this.setState({ filter: "" });
+    };
+
     render() {
       return (
         <div>
@@ -41,16 +45,21 @@ class ContactList extends Component {
                   onChange={this.handleChange}
                   className={css.formInput}>
                 </input>
-              </label>  
+              </label>
                 </div>
-             
             </form>
           </div>
+                <div>
+                <button className={css.clearBtn} onClick={this.clearFindInput}> &#10005; </button>
+                </div>
           <ul>
             {this.getContacts().map(({ name, number, id }) => (
               <li key={id} className={css.contact}>
                 {name} --- {number}
-              <button className={css.deleteBtn} onClick={()=> this.props.deleteContact(id)}>Delete contact</button></li>
+                <div>
+                <button className={css.deleteBtn} onClick={()=> this.props.deleteContact(id)}>Delete contact</button>
+                </div>
+              </li>
             ))}
           </ul>
         </div>

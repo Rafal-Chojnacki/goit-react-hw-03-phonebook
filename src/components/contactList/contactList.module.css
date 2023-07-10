@@ -21,6 +21,7 @@
 }
 
 .contact {
+    display: flex;
     text-align: left;
     font-size: 20px;
     padding: 5px;
@@ -34,3 +35,16 @@
 .deleteBtn:hover {
     cursor: pointer;
 };
+
+.clearBtn {
+    margin: 10px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: brown;
+    width: 20px;
+    height: 20px;;
+}
+
+.clearBtn:hover {
+    cursor: pointer;
+}
