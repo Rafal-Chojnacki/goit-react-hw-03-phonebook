@@ -1,0 +1,32 @@
+.wrapper {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.form { 
+    display:inline-block;
+    text-align: left;
+}
+
+.formInput {
+    display: flex;
+    margin-top: 10px;
+  
+}
+.inputLabel {
+    color: rgb(0, 60, 255);
+    font-weight: 700;
+  
+}
+
+.contact {
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.deleteBtn {
+    background-color: bisque;
+    margin-left: 20px;
+}
