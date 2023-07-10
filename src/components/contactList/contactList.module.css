@@ -30,3 +30,7 @@
     background-color: bisque;
     margin-left: 20px;
 }
+
+.deleteBtn:hover {
+    cursor: pointer;
+};

@@ -37,10 +37,9 @@ class AddContact extends Component {
     }));
   };
 
-  deleteContact = (index) => {
+  deleteContact = (id) => {
     this.setState((prevState) => {
-      const updatedContacts = [...prevState.contacts];
-      updatedContacts.splice(index, 1);
+      const updatedContacts = prevState.contacts.filter(contact => contact.id !== id);
       return { contacts: updatedContacts };
     });
   };

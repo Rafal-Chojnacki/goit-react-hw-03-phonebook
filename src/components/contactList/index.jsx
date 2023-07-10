@@ -47,10 +47,10 @@ class ContactList extends Component {
             </form>
           </div>
           <ul>
-            {this.getContacts().map(({ name, number, id }, index) => (
+            {this.getContacts().map(({ name, number, id }) => (
               <li key={id} className={css.contact}>
                 {name} --- {number}
-              <button className={css.deleteBtn} onClick={()=> this.props.deleteContact(index)}>Delete contact</button></li>
+              <button className={css.deleteBtn} onClick={()=> this.props.deleteContact(id)}>Delete contact</button></li>
             ))}
           </ul>
         </div>
