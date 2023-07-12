@@ -35,16 +35,15 @@
 
 .deleteBtn:hover {
     cursor: pointer;
-};
+}
 
 .clearBtn {
-    margin: 10px;
     padding: 0;
     border: 2px solid red;
     border-radius: 5px;
     color: red;
-    width: 20px;
-    height: 20px;;
+    width: 25px;
+    height: 25px;;
 }
 
 .clearBtn:hover {
